@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="hidden md:flex justify-center animate-fade-in">
             <div className="relative rounded-lg overflow-hidden border-4 border-white/30 shadow-xl max-w-md">
               <img 
-                src="https://cdn.poehali.dev/files/77e4e56a-ae83-441b-883e-bb305e55fa60.jpg" 
+                src="https://cdn.poehali.dev/files/b7f15755-1d3b-4f40-b723-5da7f5ab36ba.jpg" 
                 alt="Кулешова Елизавета Александровна" 
                 className="w-full h-auto object-cover"
               />
