@@ -56,19 +56,19 @@ const config = {
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          border: "hsl(var(--sidebar-border))",
           accent: "hsl(var(--sidebar-accent))",
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Добавляем оттенки зеленого и хаки
-        "teacher-primary": "#4D6A4F",
-        "teacher-secondary": "#7A9A7E",
-        "teacher-light": "#C9E4CA",
-        "khaki": "#606C38",
-        "khaki-light": "#DDA15E",
+        // Добавляем цвета для учительского сайта
+        teacher: {
+          primary: "#4D6A4F",  // Основной зеленый
+          secondary: "#7A9A7E", // Более светлый зеленый
+          light: "#C9E4CA",    // Очень светлый зеленый для фона
+          dark: "#2C3C2D",     // Темно-зеленый для акцентов
+        },
+        khaki: "#606C38",      // Оттенок хаки
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,24 +84,19 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "fade-in": {
-          from: { opacity: "0", transform: "translateY(10px)" },
-          to: { opacity: "1", transform: "translateY(0)" }
-        },
-        "fade-right": {
-          from: { opacity: "0", transform: "translateX(-10px)" },
-          to: { opacity: "1", transform: "translateX(0)" }
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.5s ease-out",
-        "fade-right": "fade-right 0.5s ease-out",
+        "fade-in": "fade-in 0.5s ease-out forwards",
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
-} satisfies Config;
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')],
+} satisfies Config
 
 export default config;

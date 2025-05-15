@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import {
@@ -9,7 +9,8 @@ import {
 } from "@/components/ui/dialog";
 
 const Gallery = () => {
-  const classPhoto = "https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
+  // Фотография класса с детьми (используем placeholder с unsplash для демонстрации)
+  const classPhoto = "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1122&q=80";
 
   return (
     <section id="gallery" className="py-16">
@@ -30,7 +31,7 @@ const Gallery = () => {
                   <div className="relative">
                     <img 
                       src={classPhoto} 
-                      alt="Фотография класса" 
+                      alt="Фотография класса с детьми" 
                       className="w-full aspect-video object-cover transition-transform group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-teacher-primary/0 group-hover:bg-teacher-primary/20 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
@@ -40,15 +41,17 @@ const Gallery = () => {
                     </div>
                   </div>
                   <CardContent className="py-4">
-                    <h3 className="text-lg font-medium text-teacher-primary">Наш класс</h3>
-                    <p className="text-sm text-muted-foreground">Дружный коллектив учеников</p>
+                    <h3 className="text-lg font-medium text-teacher-primary">Наш дружный класс</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Мы учимся, играем и растём вместе
+                    </p>
                   </CardContent>
                 </Card>
               </DialogTrigger>
               <DialogContent className="max-w-4xl">
                 <img 
                   src={classPhoto} 
-                  alt="Фотография класса" 
+                  alt="Фотография класса с детьми" 
                   className="w-full object-contain max-h-[80vh]"
                 />
               </DialogContent>
@@ -57,8 +60,8 @@ const Gallery = () => {
           
           <div className="mt-12 text-center">
             <p className="text-muted-foreground italic">
-              "Каждый ребенок — это уникальная личность. 
-              В нашем классе мы учимся, растем и развиваемся вместе!"
+              "Каждый ребенок — это уникальная личность с огромным потенциалом. 
+              В нашем классе мы создаём атмосферу, где каждый может проявить свои таланты!"
             </p>
           </div>
         </div>

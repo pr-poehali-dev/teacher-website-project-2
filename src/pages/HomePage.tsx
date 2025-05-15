@@ -7,6 +7,7 @@ import Education from '@/components/Education';
 import Gallery from '@/components/Gallery';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const HomePage = () => {
   useEffect(() => {
@@ -59,6 +60,7 @@ const HomePage = () => {
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
