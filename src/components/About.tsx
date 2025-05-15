@@ -32,11 +32,11 @@ const About = () => {
               </p>
             </div>
             
-            <div className="flex justify-center">
+            <div className="md:hidden lg:flex justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
-                alt="Учитель начальных классов" 
-                className="rounded-lg shadow-md max-h-80 object-cover"
+                src="https://cdn.poehali.dev/files/77e4e56a-ae83-441b-883e-bb305e55fa60.jpg" 
+                alt="Кулешова Елизавета Александровна" 
+                className="rounded-lg shadow-md max-h-80 object-cover hidden md:block"
               />
             </div>
           </div>

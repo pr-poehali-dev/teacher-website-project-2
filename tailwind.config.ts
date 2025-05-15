@@ -1,15 +1,14 @@
 
 import type { Config } from "tailwindcss";
 
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-  ],
-  prefix: "",
+	],
   theme: {
     container: {
       center: true,
@@ -61,14 +60,14 @@ const config = {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Добавляем цвета для учительского сайта
+        // Custom colors for the teacher website
         teacher: {
-          primary: "#4D6A4F",  // Основной зеленый
-          secondary: "#7A9A7E", // Более светлый зеленый
-          light: "#C9E4CA",    // Очень светлый зеленый для фона
-          dark: "#2C3C2D",     // Темно-зеленый для акцентов
+          primary: "#4D6A4F",  // Darker green
+          secondary: "#7A9A7E", // Medium green
+          light: "#C9E4CA",     // Light green
+          accent: "#606C38",    // Khaki accent
         },
-        khaki: "#606C38",      // Оттенок хаки
+        khaki: "#606C38",       // Khaki color
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -77,26 +76,26 @@ const config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
+          from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          to: { height: 0 },
+        },
+        "fade-in": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.5s ease-out forwards",
-      },
-      fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
+        "fade-in": "fade-in 1s ease-out",
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')],
-} satisfies Config
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+};
 
 export default config;
