@@ -1,4 +1,3 @@
-
 import Icon from "@/components/ui/icon";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -10,17 +9,17 @@ const Education = () => {
           <h2 className="text-3xl font-bold text-teacher-primary mb-2 text-center">
             Образование
           </h2>
-          
+
           <p className="text-center text-muted-foreground mb-12">
             Профессиональная подготовка и квалификация
           </p>
-          
+
           <div className="relative border-l-2 border-teacher-secondary pl-6 ml-4 md:ml-12 space-y-12 mb-12">
             <Card className="relative border-teacher-secondary/30">
               <div className="absolute -left-[43px] top-6 w-8 h-8 rounded-full bg-teacher-primary flex items-center justify-center border-4 border-teacher-light/50">
                 <Icon name="GraduationCap" className="h-4 w-4 text-white" />
               </div>
-              
+
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold text-teacher-primary mb-1">
                   Высшее педагогическое образование
@@ -29,19 +28,19 @@ const Education = () => {
                   Филиал ВВГУ в г. Артёме
                 </p>
                 <p className="text-sm text-muted-foreground mb-1">
-                  Специальность: "Педагогика и методика начального образования"
+                  Специальность: "Преподавание в начальных классах"
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Квалификация: Учитель начальных классов
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="relative border-teacher-secondary/30">
               <div className="absolute -left-[43px] top-6 w-8 h-8 rounded-full bg-teacher-primary flex items-center justify-center border-4 border-teacher-light/50">
                 <Icon name="Award" className="h-4 w-4 text-white" />
               </div>
-              
+
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold text-teacher-primary mb-1">
                   Повышение квалификации
@@ -50,19 +49,20 @@ const Education = () => {
                   Современные технологии обучения
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Курсы по инновационным методикам преподавания в начальной школе, 
-                  использованию информационных технологий в учебном процессе.
+                  Курсы по инновационным методикам преподавания в начальной
+                  школе, использованию информационных технологий в учебном
+                  процессе.
                 </p>
               </CardContent>
             </Card>
           </div>
-          
+
           <div className="bg-teacher-light/30 p-6 rounded-lg border border-teacher-secondary/20">
             <h3 className="text-xl font-semibold text-teacher-primary mb-4 flex items-center gap-2">
               <Icon name="FileText" className="h-5 w-5" />
               Профессиональные навыки
             </h3>
-            
+
             <ul className="grid md:grid-cols-2 gap-x-8 gap-y-3">
               {[
                 "Методическая грамотность",
@@ -72,7 +72,7 @@ const Education = () => {
                 "Работа с родителями",
                 "Использование ИКТ в обучении",
                 "Проектная деятельность",
-                "Создание учебных материалов"
+                "Создание учебных материалов",
               ].map((skill, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <span className="w-4 h-4 rounded-full bg-khaki flex items-center justify-center">
